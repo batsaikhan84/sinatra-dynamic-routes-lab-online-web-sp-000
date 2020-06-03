@@ -36,11 +36,14 @@ class App < Sinatra::Base
       @total = @number1.to_i + @number2.to_i
       @total.to_s
     elsif @operation == "subtract"
-      @number1 - @number2
+      @total = @number1.to_i - @number2.to_i
+      @total.to_s
     elsif @operation == "multiply"
-      @number1 * @number2
+      @total = @number1.to_i * @number2.to_i
+      @total.to_s
     elsif @operation == "divide"
-      @number1 / @number2
+      @total = @number1.to_i / @number2.to_i
+      @total.to_s
     end
   end
     
